@@ -157,6 +157,20 @@ header {
     font-size: 16px;
 }
 
+/* Estilos para enlaces de contacto en info-bar */
+.email-link,
+.phone-link {
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.email-link:hover,
+.phone-link:hover {
+    color: #f4b434 !important;
+    text-decoration: none;
+}
+
 /* ===================================
    HERO SECTION
    ================================== */
@@ -494,6 +508,20 @@ header {
     width: 20px;
 }
 
+/* Estilos para enlaces de contacto en footer */
+.footer-email-link,
+.footer-phone-link {
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-email-link:hover,
+.footer-phone-link:hover {
+    color: #f4b434 !important;
+    text-decoration: none;
+}
+
 .cert-badge {
     display: inline-flex;
     align-items: center;
@@ -555,6 +583,39 @@ header {
 /* ===================================
    RESPONSIVE DESIGN
    ================================== */
+
+/* Estilos globales para enlaces de contacto */
+.email-link,
+.phone-link,
+.footer-email-link,
+.footer-phone-link {
+    outline: none;
+    border: none;
+}
+
+.email-link:visited,
+.phone-link:visited,
+.footer-email-link:visited,
+.footer-phone-link:visited {
+    color: white !important;
+}
+
+.email-link:active,
+.phone-link:active,
+.footer-email-link:active,
+.footer-phone-link:active {
+    color: #f4b434 !important;
+}
+
+/* Focus para accesibilidad */
+.email-link:focus,
+.phone-link:focus,
+.footer-email-link:focus,
+.footer-phone-link:focus {
+    outline: 2px solid #f4b434;
+    outline-offset: 2px;
+    color: #f4b434 !important;
+}
 
 @media (max-width: 768px) {
     .header-main {
@@ -689,4 +750,3 @@ header {
         font-size: 1em;
     }
 }
-
