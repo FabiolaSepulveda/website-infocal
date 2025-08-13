@@ -1,0 +1,281 @@
+/* ===================================
+   ANIMACIONES ADICIONALES PARA INFOCAL
+   (Archivo opcional para más efectos)
+   ================================== */
+
+/* Animación de entrada para las cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación a las cards cuando aparecen */
+.capacitacion-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.capacitacion-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.capacitacion-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+/* Animación para las áreas de estudio */
+.area-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.area-card:nth-child(1) { animation-delay: 0.1s; }
+.area-card:nth-child(2) { animation-delay: 0.2s; }
+.area-card:nth-child(3) { animation-delay: 0.3s; }
+.area-card:nth-child(4) { animation-delay: 0.4s; }
+.area-card:nth-child(5) { animation-delay: 0.5s; }
+.area-card:nth-child(6) { animation-delay: 0.6s; }
+.area-card:nth-child(7) { animation-delay: 0.7s; }
+.area-card:nth-child(8) { animation-delay: 0.8s; }
+.area-card:nth-child(9) { animation-delay: 0.9s; }
+.area-card:nth-child(10) { animation-delay: 1.0s; }
+.area-card:nth-child(11) { animation-delay: 1.1s; }
+.area-card:nth-child(12) { animation-delay: 1.2s; }
+
+/* Efecto de pulso para el botón CTA */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+    50% {
+        box-shadow: 0 8px 30px rgba(226, 45, 59, 0.4);
+    }
+    100% {
+        box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+}
+
+.cta-button {
+    animation: pulse 2s infinite;
+}
+
+/* Animación de rotación sutil para los iconos */
+@keyframes subtleRotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.area-card:hover i {
+    animation: subtleRotate 0.5s ease-in-out;
+}
+
+/* Efecto de ondulación en el hero */
+@keyframes wave-animation {
+    0% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(-25px) translateY(-10px); }
+    100% { transform: translateX(0) translateY(0); }
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    animation: wave-animation 6s ease-in-out infinite;
+}
+
+/* Animación de texto typewriter para el hero */
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.hero h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40, end) 0.5s both;
+}
+
+/* Animación de escalado para el logo */
+@keyframes logoBreath {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.logo-area img {
+    animation: logoBreath 4s ease-in-out infinite;
+}
+
+/* Efecto de brillo en los enlaces del menú */
+@keyframes shine {
+    0% { background-position: -200px; }
+    100% { background-position: 200px; }
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transition: left 0.5s;
+}
+
+.nav-links a:hover::after {
+    left: 100%;
+}
+
+/* Animación de contador para números importantes */
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.number-counter {
+    animation: countUp 1s ease-out;
+}
+
+/* Efecto parallax suave para elementos de fondo */
+@keyframes parallaxFloat {
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-20px) rotate(180deg); 
+    }
+}
+
+.background-element {
+    animation: parallaxFloat 15s ease-in-out infinite;
+}
+
+/* Animación de carga para la página */
+@keyframes pageLoad {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+body {
+    animation: pageLoad 0.8s ease-out;
+}
+
+/* Efecto de escritura para texto dinámico */
+.typing-effect {
+    overflow: hidden;
+    border-right: 2px solid #f4b434;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #f4b434; }
+}
+
+/* Animación de aparición suave para secciones */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación de entrada para el botón de WhatsApp */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Efecto hover mejorado para las cards */
+.enhanced-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.enhanced-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(226, 45, 59, 0.1),
+        transparent
+    );
+    transition: left 0.6s ease;
+}
+
+.enhanced-hover:hover::before {
+    left: 100%;
+}
+
+/* Animaciones para móviles (reducidas para mejor performance) */
+@media (max-width: 768px) {
+    .hero h1 {
+        animation: none;
+    }
+    
+    .logo-area img {
+        animation: none;
+    }
+    
+    .area-card {
+        animation: fadeInUp 0.4s ease-out;
+    }
+    
+    .capacitacion-item {
+        animation: fadeInUp 0.4s ease-out;
+    }
+}
+
+/* Desactivar animaciones para usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

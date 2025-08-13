@@ -239,6 +239,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===================================
+    // WHATSAPP BUTTON FUNCTIONALITY
+    // ===================================
+    
+    const whatsappBtn = document.querySelector('.whatsapp-float');
+    
+    // Agregar evento de click para tracking (opcional)
+    whatsappBtn.addEventListener('click', function() {
+        // Aquí puedes agregar Google Analytics o tracking
+        console.log('Usuario hizo click en WhatsApp');
+        
+        // Opcional: mostrar notificación
+        setTimeout(() => {
+            showNotification('Te estamos redirigiendo a WhatsApp...', 'info');
+        }, 100);
+    });
+
+    // Efecto de entrada suave para el botón de WhatsApp
+    setTimeout(() => {
+        whatsappBtn.style.animation = 'slideInRight 0.5s ease-out';
+    }, 1000);
+
+    // ===================================
     // SCROLL TO TOP BUTTON
     // ===================================
     
