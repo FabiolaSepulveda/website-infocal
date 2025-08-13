@@ -152,6 +152,50 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===================================
+    // NOSOTROS SECTION ANIMATIONS
+    // ===================================
+    
+    // Animación especial para cards de misión y visión
+    const mvCards = document.querySelectorAll('.mv-card');
+    const mvObserver = new IntersectionObserver(function(entries) {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 200);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    mvCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'all 0.6s ease';
+        mvObserver.observe(card);
+    });
+
+    // Animación para elementos de política de calidad
+    const politicaItems = document.querySelectorAll('.politica-item');
+    const politicaObserver = new IntersectionObserver(function(entries) {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0)';
+                }, index * 100);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    politicaItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateX(-30px)';
+        item.style.transition = 'all 0.5s ease';
+        politicaObserver.observe(item);
+    });
+
+    // ===================================
     // FORM VALIDATION
     // ===================================
     

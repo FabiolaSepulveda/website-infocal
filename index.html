@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/animations.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -23,12 +25,12 @@
                     </label>
                                   
                     <nav class="nav-links">
-                        <a href="#"><i class="fas fa-home"></i> Inicio</a>
-                        <a href="#"><i class="fas fa-users"></i> Nosotros</a>
-                        <a href="#"><i class="fas fa-graduation-cap"></i> Cursos</a>
-                        <a href="#"><i class="fas fa-calendar"></i> Programa</a>
-                        <a href="#"><i class="fas fa-images"></i> Galería</a>
-                        <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
+                        <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+                        <a href="#nosotros"><i class="fas fa-users"></i> Nosotros</a>
+                        <a href="#cursos"><i class="fas fa-graduation-cap"></i> Cursos</a>
+                        <a href="#programa"><i class="fas fa-calendar"></i> Programa</a>
+                        <a href="#galeria"><i class="fas fa-images"></i> Galería</a>
+                        <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
                         <a href="#"><i class="fas fa-laptop"></i> E-Learning</a>
                         <a href="#"><i class="fas fa-building"></i> Oficina Virtual</a>
                     </nav>   
@@ -42,7 +44,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="inicio">
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
@@ -50,13 +52,143 @@
                 <h1>Y SERVICIOS PROFESIONALES</h1>
                 <p>Capacitación certificada en todo el territorio nacional.<br>
                 Impartimos cursos respaldados por SENCE, comprometidos con la formación de personas a lo largo de Chile.</p>
-                <a href="#" class="cta-button">
+                <a href="#nosotros" class="cta-button">
                     <i class="fas fa-rocket"></i> Comienza Hoy
                 </a>
             </div>
         </section>
 
-        <!-- Wave superior -->
+        <!-- Sección Nosotros -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <i class="fas fa-home"></i>
+                    <span>NOSOTROS</span>
+                </div>
+
+                <!-- Quiénes Somos -->
+                <div class="quienes-somos">
+                    <div class="section-header">
+                        <i class="fas fa-crown"></i>
+                        <h2>QUIÉNES SOMOS</h2>
+                        <p class="subtitle">INFOCAL LTDA</p>
+                    </div>
+                    
+                    <div class="empresa-descripcion">
+                        <p>Nacemos con la finalidad de proporcionar capacitación de excelencia, asegurando siempre altos estándares de calidad académica y técnica, para los requerimientos de instituciones públicas, privadas y personas naturales. Se certifica en norma Chilena 2728:2015, certificación que mantiene hasta la fecha. Conjuntamente, se promueve la mejora continua de sus procesos, con la finalidad de asegurar la calidad y cumplir con la Normativa Vigente.</p>
+                    </div>
+                </div>
+
+                <!-- Misión y Visión -->
+                <div class="mision-vision">
+                    <div class="mv-card mision">
+                        <div class="mv-header">
+                            <i class="fas fa-rocket"></i>
+                            <h3>MISIÓN</h3>
+                        </div>
+                        <div class="mv-content">
+                            <p>Diseñar y entregar servicios de capacitación de excelencia, de acuerdo con las necesidades propias de nuestros clientes, contribuyendo así al desarrollo continuo de las personas, sus organizaciones y nuestra sociedad.</p>
+                        </div>
+                    </div>
+
+                    <div class="mv-image">
+                        <img src="assets/img/mision-vision.png" alt="Mujer profesional pensando" />
+                    </div>
+
+                    <div class="mv-card vision">
+                        <div class="mv-header">
+                            <i class="fas fa-eye"></i>
+                            <h3>VISIÓN</h3>
+                        </div>
+                        <div class="mv-content">
+                            <p>Consolidarnos a nivel país como un Organismo Técnico de Capacitación líder en la formación de competencias laborales y que esté al servicio de la sociedad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nuestra Experiencia -->
+                <div class="experiencia-section">
+                    <div class="section-header">
+                        <h2>NUESTRA EXPERIENCIA</h2>
+                        <div class="header-line"></div>
+                    </div>
+
+                    <div class="experiencia-content">
+                        <div class="experiencia-intro">
+                            <p class="highlight">INFOCAL LTDA CUENTA CON MÁS DE 13 AÑOS DE EXPERIENCIA EN CAPACITACIÓN Y FORMACIÓN CONTINUA DE PERSONAS.</p>
+                        </div>
+
+                        <div class="politica-calidad">
+                            <p class="politica-title">DESTACA POR UNA POLÍTICA DE CALIDAD ESTRICTA, LA CUAL SE ENCUENTRA BASADA EN:</p>
+                            
+                            <div class="politica-items">
+                                <div class="politica-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>SATISFACER LAS NECESIDADES Y EXPECTATIVAS DEL CLIENTE</span>
+                                </div>
+                                <div class="politica-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>CONTAR CON PERSONAL DE EXCELENCIA</span>
+                                </div>
+                                <div class="politica-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>CUMPLIR CON LA LOGÍSTICA, MATERIALES E INFRAESTRUCTURA ACORDE A CADA REQUERIMIENTO</span>
+                                </div>
+                                <div class="politica-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>TRABAJAR CON PROVEEDORES CONFIABLES Y CALIFICADOS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="liderazgo-nacional">
+                            <p>EL CUMPLIMIENTO DE LA POLÍTICA DE CALIDAD A LO LARGO DE LOS AÑOS, HA CONVERTIDO A INFOCAL LTDA EN UNA EMPRESA LÍDER EN EL MERCADO DE LA CAPACITACIÓN A NIVEL NACIONAL. DESTACANDO EL TRABAJO EN CONJUNTO, EN REGIÓN DE ATACAMA, REGIÓN DE COQUIMBO, REGIÓN METROPOLITANA, REGIÓN DE O'HIGGINS, ENTRE OTRAS, A LO LARGO DE TODO CHILE.</p>
+                        </div>
+
+                        <div class="trabajo-conjunto">
+                            <p>NUESTRO TRABAJO EN CONJUNTO CON VARIAS INSTITUCIONES PRIVADAS Y PÚBLICAS, QUE CONFÍAN EN NOSOTROS, A PARTIR DE LA EDUCACIÓN CONTINUA DE SUS RECURSOS HUMANOS.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Algunos de Nuestros Clientes -->
+                <div class="clientes-section">
+                    <div class="section-header">
+                        <h2>ALGUNOS DE NUESTROS CLIENTES:</h2>
+                    </div>
+                    
+                    <div class="clientes-logos">
+                        <div class="cliente-placeholder">
+                            <i class="fas fa-building"></i>
+                            <span>Cliente 1</span>
+                        </div>
+                        <div class="cliente-placeholder">
+                            <i class="fas fa-industry"></i>
+                            <span>Cliente 2</span>
+                        </div>
+                        <div class="cliente-placeholder">
+                            <i class="fas fa-hospital"></i>
+                            <span>Cliente 3</span>
+                        </div>
+                        <div class="cliente-placeholder">
+                            <i class="fas fa-university"></i>
+                            <span>Cliente 4</span>
+                        </div>
+                        <div class="cliente-placeholder">
+                            <i class="fas fa-store"></i>
+                            <span>Cliente 5</span>
+                        </div>
+                        <div class="cliente-placeholder">
+                            <i class="fas fa-truck"></i>
+                            <span>Cliente 6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave entre secciones -->
         <div class="wave">
             <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#e22d3b" d="M0,96L80,85.3C160,75,320,53,480,69.3C640,85,800,139,960,149.3C1120,160,1280,128,1360,112L1440,96V0H0Z"></path>
@@ -200,6 +332,7 @@
                 </div>
             </div>
         </footer>
+
         <!-- Botón flotante de WhatsApp -->
         <a href="https://wa.me/56939284874?text=Hola%20INFOCAL,%20me%20interesa%20conocer%20más%20sobre%20sus%20cursos%20de%20capacitación" 
            class="whatsapp-float" 
